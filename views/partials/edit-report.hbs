@@ -1,0 +1,37 @@
+<form class="box" action="/station/{{station._id}}/updatereport/{{report._id}}" method="POST">
+  <label>Report Details:</label>
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <input class="input" type="number" placeholder="Code" name="code" value="{{report.code}}">
+      </div>
+      <div class="field">
+        <input class="input" type="number" placeholder="Temperature" name="temperature" value="{{report.temperature}}">
+      </div>
+      <div class="field">
+        <input class="input" type="number" placeholder="WindSpeed" name="windSpeed" value="{{report.windSpeed}}">
+      </div>
+      
+         <div class="field">
+        <select name="windDirection" required>
+          <option value= "disabled select" > Select Wind Direction</option>
+          <option value ="N">North</option>
+          <option value ="NE">North-East</option>
+          <option value ="E">East</option>
+          <option value ="SE">South-East</option>
+          <option value ="S">South</option>
+          <option value = "SW">South-West</option>
+          <option value ="W">West</option>
+          <option value ="NW">North-West</option>
+           </select> 
+      </div>
+      
+         <div class="field">
+        <input class="input" type="number" placeholder="Pressure" name="pressure" value="{{report.pressure}}">
+      </div>
+    </div>
+  </div>
+  <button class="button is-primary">Update Report</button>
+</form>
+
+

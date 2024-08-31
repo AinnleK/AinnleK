@@ -1,0 +1,70 @@
+<form class="box" action="/station/{{station._id}}/addreport" method="POST">
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <label class="label">Code</label>
+        <input class="input" type="number" step ="any" min="200" max="804" placeholder="00" name="code"> 
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <label class="label">Temperature</label>
+        <input class="input" type="number" placeholder="00.0C" name="temperature">
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <label class="label">Wind Speed</label>
+        <input class="input" type="number" placeholder="00.00kMh" name="windSpeed">
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <label class ="label">Wind Direction </label> 
+        </div>
+        </div>
+      <div class="select"> 
+        <select name="windDirection" required>
+         <option value= "disabled select" > Select Wind Direction</option>
+          <option value ="N">North</option>
+          <option value ="NE">North-East</option>
+          <option value ="E">East</option>
+          <option value ="SE">South-East</option>
+          <option value ="S">South</option>
+          <option value = "SW">South-West</option>
+          <option value ="W">West</option>
+          <option value ="NW">North-West</option>
+        </select> 
+      </div>
+  
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <label class="label">Pressure</label>
+        <input class="input" type="number" placeholder="000hPa" name="pressure">
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <button class="button is-info">Submit Report</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<script>
+document.addEventListener ('DOMContentLoaded', function() {
+const timestampInput = document.getElementById('report-timestamp');
+    const now = dayjs().format();
+</script>

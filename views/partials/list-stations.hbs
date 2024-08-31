@@ -1,0 +1,18 @@
+{{#each stations}}
+<div class="box box-link-hover-shadow">
+  <h2 class="title">
+   {{title}}
+   (Latitude : {{lat}} Longitude: {{lng}})
+  </h2>
+  
+   <div class="section">
+    {{> report-table}}
+  </div>
+    <a href="/station/{{_id}}" class="button">
+    {{>icons/open}}
+    </a>
+  <a href="dashboard/deletestation/{{_id}}" class="button">
+  {{> icons/delete}}
+  </a>
+</div>
+{{/each}}
