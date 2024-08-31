@@ -1,0 +1,95 @@
+{
+  "file": "./models/reports.json",
+  "reports": [
+    {
+      "code": "43",
+      "temperature": 43,
+      "windSpeed": 43,
+      "windDirection": "gdf",
+      "pressure": 43,
+      "_id": "bd99f93b-b56c-41c3-9bd3-257617ff9d43",
+      "stationid": "b9b8a915-b13a-47fc-900d-efa9035c27c7"
+    },
+    {
+      "code": "42",
+      "temperature": 42,
+      "windSpeed": 42,
+      "windDirection": "fsd",
+      "pressure": 43,
+      "_id": "b56553c7-6cbb-40ec-8306-d2838a4eded4",
+      "stationid": "b9b8a915-b13a-47fc-900d-efa9035c27c7"
+    },
+    {
+      "code": "1",
+      "temperature": 1,
+      "windSpeed": 1,
+      "windDirection": "1",
+      "pressure": 1,
+      "_id": "0185e388-f820-4fe4-9b22-5038078473cb",
+      "stationid": "7fe90ffc-c828-4bcc-8189-5e5f87807f0a"
+    },
+    {
+      "code": "3",
+      "temperature": 3,
+      "windSpeed": 3,
+      "windDirection": "3",
+      "pressure": 3,
+      "_id": "d39cde1e-ed23-407c-873a-275a7965e4ab",
+      "stationid": "7fe90ffc-c828-4bcc-8189-5e5f87807f0a"
+    },
+    {
+      "code": "2",
+      "temperature": 2,
+      "windSpeed": 2,
+      "windDirection": "2",
+      "pressure": 2,
+      "_id": "6d18abbb-250c-4a71-9f56-e28509c8606f",
+      "stationid": "7fe90ffc-c828-4bcc-8189-5e5f87807f0a"
+    },
+    {
+      "code": "1",
+      "temperature": 22,
+      "windSpeed": 12,
+      "windDirection": "n",
+      "pressure": 12,
+      "_id": "b034279e-0f63-4dfd-804e-b629d4841333",
+      "stationid": "b3031dd9-dde2-4b13-b293-a6e3c0ae42a7"
+    },
+    {
+      "code": "2",
+      "temperature": 10,
+      "windSpeed": 24,
+      "windDirection": "s",
+      "pressure": 40,
+      "_id": "82fad803-78a4-49ec-bd05-4e577dcfca96",
+      "stationid": "b3031dd9-dde2-4b13-b293-a6e3c0ae42a7"
+    },
+    {
+      "code": "213",
+      "temperature": 7,
+      "windSpeed": 7,
+      "windDirection": "W",
+      "pressure": 13,
+      "_id": "4d6fc1d8-cd2e-464a-913b-5782400494f8",
+      "stationid": "48d70b3a-5c1b-4f13-aa31-0f5c7efc431f"
+    },
+    {
+      "code": "213",
+      "temperature": "28",
+      "windSpeed": "1",
+      "windDirection": "NE",
+      "pressure": "15",
+      "_id": "9988fec9-70e0-4ec3-8a71-a97de7d6ad13",
+      "stationid": "48d70b3a-5c1b-4f13-aa31-0f5c7efc431f"
+    },
+    {
+      "code": "216",
+      "temperature": 2,
+      "windSpeed": 13,
+      "windDirection": "SE",
+      "pressure": 14,
+      "_id": "cc608bc4-57a5-41b1-94ae-50262411ecc3",
+      "stationid": "48d70b3a-5c1b-4f13-aa31-0f5c7efc431f"
+    }
+  ]
+}

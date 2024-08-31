@@ -1,0 +1,35 @@
+{
+  "file": "./models/stations.json",
+  "stations": [
+    {
+      "title": "station",
+      "_id": "b9b8a915-b13a-47fc-900d-efa9035c27c7"
+    },
+    {
+      "title": "2",
+      "userid": "e4ae1305-a176-4bd1-96ba-f9395a4576dd",
+      "_id": "6e9cd2a2-9ae9-4c86-9391-e7a44e54bef3"
+    },
+    {
+      "_id": "48d70b3a-5c1b-4f13-aa31-0f5c7efc431f",
+      "title": "Dublin",
+      "userid": "5a00d568-04ec-406d-bfa0-9bc9c6a2fc9e",
+      "lat": "12",
+      "lng": "21"
+    },
+    {
+      "_id": "cd4e92d4-78ce-49be-9e97-5a3e73c58be4",
+      "title": "Cork",
+      "userid": "5a00d568-04ec-406d-bfa0-9bc9c6a2fc9e",
+      "lat": "52",
+      "lng": "25"
+    },
+    {
+      "_id": "c8543385-3a44-4eb7-a77c-d40240769bd5",
+      "title": "Paris",
+      "userid": "5a00d568-04ec-406d-bfa0-9bc9c6a2fc9e",
+      "lat": "87",
+      "lng": "-15"
+    }
+  ]
+}

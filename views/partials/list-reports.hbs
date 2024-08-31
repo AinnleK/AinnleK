@@ -1,0 +1,112 @@
+<div class="columns">
+ 
+      <div class= "column is-one-fifth">
+        <div class="card">
+          <div class="card-header-title is-centered">Location </div>
+        <div class="card-header-icon">
+          {{>icons/location}} </div>
+          <div class="card-content">
+          {{station.title}} <br>
+          Latitude: {{station.lat}} <br>
+          Longitude: {{station.lng}} 
+        </div> 
+        </div> </div>
+     
+ 
+
+      <div class= "column is-one-fifth">
+        <div class="card">
+          <div class="card-header-title is-centered">Temperature </div>
+        <div class="card-header-icon">{{>icons/temperature}} </div>
+        <div class="card-content">
+          Current: {{currentTemp.temperature}}°C <br>
+       Min: {{minTemp.temperature}}°C <br>
+       Max: {{maxTemp.temperature}}°C </div>
+          </div>
+        </div>
+
+
+
+      <div class="column is-one-fifth">
+        <div class="card">
+          <div class = "card-header-title is-centered">Wind Speed </div>
+        <div class="card-header-icon">{{>icons/wind}} </div>
+        <div class="card-content">
+          Current: {{currentWindSpeed.windSpeed}} km/hr <br>
+      Min: {{minWindSpeed.windSpeed}} km/hr <br>
+      Max: {{maxWindSpeed.windSpeed}} km/hr</div>
+         </div>
+  </div>
+
+  
+  
+      <div class="column is-one-fifth">
+        <div class="card">
+          <div class="card-header-title is-centered"> Wind Direction  </div>
+         <div class="card-header-icon">{{>icons/winddirection}} </div> 
+          <div class="card-content">
+            Current Wind Direction: {{currentWindDirection.station}}
+          </div>
+         </div>
+      <div>
+        </div>
+  </div>
+        
+        <div class="column is-one-fifth">
+          <div class="card">
+            <div class="card-header-title is-centered"> Pressure </div>
+         <div class="card-header-icon"> {{>icons/pressure}} </div>
+         <div class="card-content">
+           Current: {{currentPressure.pressure}} hpa <br>
+      Min: {{minPressure.pressure}} hpa<br>
+    Max: {{maxPressure.pressure}} hpa</div>
+         
+          </div>
+        </div>
+  </div>
+</div>
+
+    
+ 
+<table class="table is-fullwidth">
+  <tbody>
+    
+    <tr>
+  <td>Code</td>
+  <td>Temperature</td>
+  <td>Wind Speed</td>
+  <td>Wind Direction</td>
+  <td>Pressure</td>
+  </tr>
+    
+    {{#each station.reports}}
+    <tr>
+      <td>
+        {{code}}
+      </td>
+      <td>
+        {{temperature}}
+      </td>
+      <td>
+        {{windSpeed}}
+      </td>
+       <td>
+        {{windDirection}}
+      </td>
+       <td>
+        {{pressure}}
+      </td>
+      <td>
+          <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button">      
+            {{>icons/delete}}
+        </a>
+      </td>
+      <td>
+        <a href="/station/{{../station._id}}/editreport/{{_id}}" class="button">
+          {{>icons/edit}}
+        </a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
